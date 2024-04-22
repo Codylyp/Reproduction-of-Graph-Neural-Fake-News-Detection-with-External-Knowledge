@@ -1,2 +1,10 @@
 # Reproduction-of-Graph-Neural-Fake-News-Detection-with-External-Knowledge
-Reproduction of Graph Neural Fake News Detection with External Knowledge
+
+# Description
+Our group reproduces the results of the proposed method and one of the baseline methods in [Reference Paper](https://github.com/Codylyp/Reproduction-of-Graph-Neural-Fake-News-Detection-with-External-Knowledge/blob/main/reference_paper.pdf). This paper employs external knowledge from Wikipedia (i.e. the knowledge base, KB) and uses Latent Dirichlet allocation to consider topics of news as the components of a graph neural network to improve fake news detection accuracy. The scope of our project is to implement the source code, thus reproducing the main results of the proposed method. Secondly, we implement the basic baseline method, long short-term memory networks (LSTM), in this article, to compare with the proposed method. Also, we carefully examine the author’s algorithm and analyze how the algorithm functions – during this process, we have a deep understanding of the model. The datasets we use are the same ones in [Reference Paper](https://github.com/Codylyp/Reproduction-of-Graph-Neural-Fake-News-Detection-with-External-Knowledge/blob/main/reference_paper.pdf), and the dataset size as a whole is around 50,000, containing four classes or two classes.
+
+# Content
+[Research Report](https://github.com/Codylyp/Reproduction-of-Graph-Neural-Fake-News-Detection-with-External-Knowledge/blob/main/Project_CompareNet.pdf)
+
+# Conclusion
+In this project, we reproduced the results of the proposed model by [Reference Paper](https://github.com/Codylyp/Reproduction-of-Graph-Neural-Fake-News-Detection-with-External-Knowledge/blob/main/reference_paper.pdf) and verified the validity of their results. CompareNet has better performance in the SLN dataset for 2-way classification and in the LUN test set for 4-way classification. Secondly, we also found the shortcomings of the paper: in the LUN validation dataset and LUN test dataset, the proposed method only has as small as 2.2% margin over LSTM for the 2-way classification task, which means these two datasets are not suitable for demonstrating the advantages of CompareNet.
